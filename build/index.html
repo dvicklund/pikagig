@@ -4,9 +4,34 @@
     <meta charset="utf-8">
     <title>Pikagig</title>
     <script type="text/javascript" src="bundle.js"></script>
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/blaze.min.css">
   </head>
+
   <body>
-    <h1>SOMETHING</h1>
+    <header class="o-grid">
+      <h1 class="c-heading c-heading--super o-grid__cell--width-75">Gigatron 4000</h1>
+      <div class="loginBox o-grid__cell--width-25 u-pillar-box--medium">
+        <label class="c-label" for="username">Username
+          <input class="c-label__field" type="text" name="username" placeholder="Username">
+          <div class="c-hint a-hint">
+            Ideally, the name of your act, or something related
+          </div>
+        </label>
+        <label class="c-label" for="password">Password
+          <input class="c-label__field" type="password" name="password" placeholder="Password">
+          <div class="c-hint a-hint">
+            To be safe, it's best to use a short phrase of over 15 characters
+          </div>
+        </label>
+      </div>
+    </header>
+    <nav class="c-nav o-grid">
+      <a class="c-nav__item o-grid__cell" href="/">Home</a>
+      <a class="c-nav__item c-nav__item--success c-nav__item--active o-grid__cell" href="/post">Post</a>
+      <a class="c-nav__item o-grid__cell" href="/search">Search</a>
+      <a class="c-nav__item o-grid__cell" href="/profile">Profile</a>
+    </nav>
+
   </body>
 </html>

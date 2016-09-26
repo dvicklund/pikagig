@@ -15,14 +15,14 @@ var paths = {
 };
 
 gulp.task('build:css', function() {
-  gulp.src('app/scss/application.scss')
+  gulp.src('app/css/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(gulp.dest('app/css/'))
     .pipe(concatCss('style.min.css'))
     .pipe(minifyCss())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('build:html', function() {
