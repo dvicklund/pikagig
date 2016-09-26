@@ -1,3 +1,7 @@
 .c-nav {
   width: 20em;
   float: left; }
+
+#dividerSineCanvas {
+  height: 4vh;
+  width: 100%; }

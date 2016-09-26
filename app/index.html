@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Pikagig</title>
-    <script type="text/javascript" src="bundle.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/blaze.min.css">
   </head>
 
   <body>
-    <header class="o-grid">
-      <h1 class="c-heading c-heading--super o-grid__cell--width-75">Gigatron 4000</h1>
-      <div class="loginBox o-grid__cell--width-25 u-pillar-box--medium">
+    <header class="o-grid o-grid--small-fit o-grid--medium-full o-grid--large-full">
+      <h1 class="c-heading c-heading--super o-grid__cell u-pillar-box--large">Gigatron 4000</h1>
+      <div class="loginBox o-grid__cell u-pillar-box--medium">
         <label class="c-label" for="username">Username
           <input class="c-label__field" type="text" name="username" placeholder="Username">
           <div class="c-hint a-hint">
@@ -26,6 +25,7 @@
         </label>
       </div>
     </header>
+    <canvas id="dividerSineCanvas"></canvas>
     <nav class="c-nav o-grid">
       <a class="c-nav__item o-grid__cell" href="/">Home</a>
       <a class="c-nav__item c-nav__item--success c-nav__item--active o-grid__cell" href="/post">Post</a>
@@ -33,5 +33,6 @@
       <a class="c-nav__item o-grid__cell" href="/profile">Profile</a>
     </nav>
 
+    <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>
