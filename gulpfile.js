@@ -56,6 +56,7 @@ gulp.task('watch:css', function() {
 
 gulp.task('watch:html', function() {
 	gulp.watch(paths.html, ['build:html']);
+  gulp.watch(paths.templates, ['build:html']);
 });
 
 gulp.task('watch:img', function() {

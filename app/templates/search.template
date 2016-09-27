@@ -1,4 +1,5 @@
-<label class="c-label" for="search">Search:
-  <input class="c-label__field" type="text" name="search" placeholder="Search for a gig">
-</label>
+<form class="c-input-group">
+  <input class="c-field" type="text" name="search" placeholder="Search for a gig">
+  <button class="c-button c-button--primary" type="button" name="button">Search</button>
+</form>
 <section id="searchResults"></section>
