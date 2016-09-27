@@ -1,0 +1,15 @@
+<div class="loginBox o-grid__cell u-pillar-box--medium">
+  <label class="c-label" for="username">Username
+    <input class="c-label__field" type="text" name="username" placeholder="Username">
+    <div class="c-hint a-hint">
+      Ideally, the name of your act, or something related
+    </div>
+  </label>
+  <label class="c-label" for="password">Password
+    <input class="c-label__field" type="password" name="password" placeholder="Password">
+    <div class="c-hint a-hint">
+      To be safe, it's best to use a short phrase (at least 20 characters)
+    </div>
+  </label>
+  <button class="c-button" type="button" name="loginGo" onclick="signIn()">Go!</button>
+</div>

@@ -1,6 +1,5 @@
 /* This script assumes that vars Sammy and jQuery ($) have been pre-loaded into
     the global namespace */
-
 require(__dirname + '/anim')()
 
 var app = Sammy('body')

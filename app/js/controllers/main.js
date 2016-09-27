@@ -4,7 +4,7 @@ module.exports = function(app) {
       // TODO: Connect to user DB
       'someName': 'A name of some sort'
     }, function(view) {
-      $('#mainView').html(view)
+      $('#view').html(view)
     })
   })
 }

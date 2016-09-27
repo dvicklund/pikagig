@@ -1,0 +1,4 @@
+<label class="c-label" for="search">Search:
+  <input class="c-label__field" type="text" name="search" placeholder="Search for a gig">
+</label>
+<section id="searchResults"></section>

@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="o-grid o-grid--small-fit o-grid--medium-full o-grid--large-full">
+    <header class="o-grid o-grid--small-fit o-grid--medium-full o-grid--large-full u-letter-box--medium">
       <h1 class="c-heading c-heading--super o-grid__cell--width-70 u-pillar-box--large">Gigatron 4000</h1>
       <div class="loginBox o-grid__cell u-pillar-box--medium">
         <label class="c-label" for="username">Username
@@ -33,13 +33,15 @@
       <a class="c-nav__item o-grid__cell" href="#/profile">Profile</a>
     </nav>
 
-    <main id="mainView">
-      
+    <!-- Where the magic happens -->
+    <main id="view">
+
     </main>
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sammy.js/0.7.6/sammy.min.js" integrity="sha256-fJgK6gF9zyNll54kPo9Ckcx0VxnOrrFBG7TTKNpGt6M=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/lib/sammy.template.js"></script>
-    <script type="text/javascript" src="bundle.js"></script>
+    <script type="text/javascript" src="bundle.js" async></script>
   </body>
 </html>

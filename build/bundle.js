@@ -46,7 +46,6 @@
 
 	/* This script assumes that vars Sammy and jQuery ($) have been pre-loaded into
 	    the global namespace */
-
 	__webpack_require__(1)()
 
 	var app = Sammy('body')
@@ -92,6 +91,7 @@
 	  __webpack_require__(3)(app)
 	  __webpack_require__(4)(app)
 	  __webpack_require__(5)(app)
+	  __webpack_require__(6)(app)
 	}
 
 
@@ -105,7 +105,7 @@
 	      // TODO: Connect to user DB
 	      'someName': 'A name of some sort'
 	    }, function(view) {
-	      $('#mainView').html(view)
+	      $('#view').html(view)
 	    })
 	  })
 	}
@@ -116,8 +116,16 @@
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
-	  app.get('#/user', function(context) {
-	    console.log('hit user route')
+	  app.get('#/profile', function(context) {
+	    // var user = $.get('/user', )
+
+	    context.render('/templates/profile.template', {
+	      //TODO: connect to user DB
+	      'firstName': 'David',
+	      'lastName': 'Vicklund'
+	    }, function(view) {
+	      $('#view').html(view)
+	    })
 	  })
 	}
 
@@ -127,8 +135,27 @@
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
-	  app.get('#/profile', function(context) {
-	    console.log('profile route hit')
+	  app.get('#/login', function(context) {
+	    context.render('/templates/login.template', {
+
+	    }, function(view) {
+	      $('#view').html(view)
+	    })
+	  })
+	}
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	module.exports = function(app) {
+	  app.get('#/search', function(context) {
+	    context.render('/templates/search.template', {
+
+	    }, function(view) {
+	      $('#view').html(view)
+	    })
 	  })
 	}
 

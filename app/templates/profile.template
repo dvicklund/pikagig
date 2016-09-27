@@ -1,0 +1,2 @@
+<h2><%= firstName %> <%= lastName %></h2>
+<img id="profilePic" src="" alt=""/>
