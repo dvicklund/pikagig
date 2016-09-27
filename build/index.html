@@ -20,19 +20,26 @@
         <label class="c-label" for="password">Password
           <input class="c-label__field" type="password" name="password" placeholder="Password">
           <div class="c-hint a-hint">
-            To be safe, it's best to use a short phrase of over 15 characters
+            To be safe, it's best to use a short phrase at least 15 characters
           </div>
         </label>
       </div>
     </header>
     <canvas id="dividerSineCanvas"></canvas>
     <nav class="c-nav o-grid">
-      <a class="c-nav__item o-grid__cell" href="/">Home</a>
-      <a class="c-nav__item c-nav__item--success c-nav__item--active o-grid__cell" href="/post">Post</a>
-      <a class="c-nav__item o-grid__cell" href="/search">Search</a>
-      <a class="c-nav__item o-grid__cell" href="/profile">Profile</a>
+      <a class="c-nav__item o-grid__cell" href="#/">Home</a>
+      <a class="c-nav__item c-nav__item--success c-nav__item--active o-grid__cell" href="#/post">Post</a>
+      <a class="c-nav__item o-grid__cell" href="#/search">Search</a>
+      <a class="c-nav__item o-grid__cell" href="#/profile">Profile</a>
     </nav>
 
+    <main id="mainView">
+      
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sammy.js/0.7.6/sammy.min.js" integrity="sha256-fJgK6gF9zyNll54kPo9Ckcx0VxnOrrFBG7TTKNpGt6M=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/lib/sammy.template.js"></script>
     <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>

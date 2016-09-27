@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var paths = {
   css: ['app/**/*.scss'],
   html: ['app/**/*.html'],
+  templates: ['app/templates/*.template'],
   img: ['app/img/*'],
   js: ['app/**/*.js'],
   test: ['test/testRoutes.js']
@@ -28,6 +29,9 @@ gulp.task('build:css', function() {
 gulp.task('build:html', function() {
   gulp.src(paths.html)
   .pipe(gulp.dest('build/'));
+
+  gulp.src(paths.templates)
+  .pipe(gulp.dest('build/templates'));
 });
 
 gulp.task('build:img', function() {

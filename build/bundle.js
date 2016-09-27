@@ -44,7 +44,19 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/* This script assumes that vars Sammy and jQuery ($) have been pre-loaded into
+	    the global namespace */
+
 	__webpack_require__(1)()
+
+	var app = Sammy('body')
+	app.use(Sammy.Template)
+
+	__webpack_require__(2)(app)
+
+	$(document).ready(function() {
+	  app.run('#/')
+	})
 
 
 /***/ },
@@ -69,6 +81,55 @@
 	  }
 
 	  draw()
+	}
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = exports = function(app) {
+	  __webpack_require__(3)(app)
+	  __webpack_require__(4)(app)
+	  __webpack_require__(5)(app)
+	}
+
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = function(app) {
+	  app.get('#/', function(context) {
+	    context.render('/templates/main.template', {
+	      // TODO: Connect to user DB
+	      'someName': 'A name of some sort'
+	    }, function(view) {
+	      $('#mainView').html(view)
+	    })
+	  })
+	}
+
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	module.exports = function(app) {
+	  app.get('#/user', function(context) {
+	    console.log('hit user route')
+	  })
+	}
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	module.exports = function(app) {
+	  app.get('#/profile', function(context) {
+	    console.log('profile route hit')
+	  })
 	}
 
 

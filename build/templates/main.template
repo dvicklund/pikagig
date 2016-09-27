@@ -1,0 +1,3 @@
+<div class="">
+  <h2><%= someName %></h2>
+</div>
