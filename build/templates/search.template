@@ -1,5 +1,5 @@
 <form class="c-input-group">
   <input class="c-field" type="text" name="search" placeholder="Search for a gig">
-  <button class="c-button c-button--primary" type="button" name="button">Search</button>
+  <button class="c-button c-button--ghost" type="button" name="button">Search</button>
 </form>
 <section id="searchResults"></section>

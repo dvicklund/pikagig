@@ -8,22 +8,14 @@
   </head>
 
   <body>
-    <header class="o-grid o-grid--small-fit o-grid--medium-full o-grid--large-full u-letter-box--medium">
-      <h1 class="c-heading c-heading--super o-grid__cell--width-70 u-pillar-box--large">Gigatron 4000</h1>
-      <div class="loginBox o-grid__cell u-pillar-box--medium">
-        <label class="c-label" for="username">Username
-          <input class="c-label__field" type="text" name="username" placeholder="Username">
-          <div class="c-hint a-hint">
-            Ideally, the name of your act, or something related
-          </div>
-        </label>
-        <label class="c-label" for="password">Password
-          <input class="c-label__field" type="password" name="password" placeholder="Password">
-          <div class="c-hint a-hint">
-            To be safe, it's best to use a short phrase at least 15 characters
-          </div>
-        </label>
+    <header class="o-grid o-grid--bottom o-grid--small-fit o-grid--medium-full o-grid--large-full u-letter-box--medium">
+      <h1 class="c-heading c-heading--super o-grid__cell--width-80 u-pillar-box--large">Gigatron 4000</h1>
+      <div id="loginSignupButtons" class="c-input-group--rounded o-grid__cell--width-20">
+        <button class="c-button c-button--success" form="login" type="submit">Login</button>
+        <button class="c-button c-button--primary" form="signup" type="submit"=>Sign Up</button>
       </div>
+      <form id="login" action="#/login" method="link"></form>
+      <form id="signup" action="#/signup" method="link"></form>
     </header>
     <canvas id="dividerSineCanvas"></canvas>
     <nav class="c-nav o-grid">

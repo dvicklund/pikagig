@@ -92,6 +92,7 @@
 	  __webpack_require__(4)(app)
 	  __webpack_require__(5)(app)
 	  __webpack_require__(6)(app)
+	  __webpack_require__(7)(app)
 	}
 
 
@@ -139,6 +140,12 @@
 	    context.render('/templates/login.template', {
 
 	    }, function(view) {
+	      var thisThing = 'this thing'
+
+	      function signIn() {
+	        console.log('signing in or whatever')
+	      }
+
 	      $('#view').html(view)
 	    })
 	  })
@@ -154,6 +161,19 @@
 	    context.render('/templates/search.template', {
 
 	    }, function(view) {
+	      $('#view').html(view)
+	    })
+	  })
+	}
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	module.exports = function(app) {
+	  app.get('#/signup', function(context) {
+	    context.render('/templates/signup.template', {}, function(view) {
 	      $('#view').html(view)
 	    })
 	  })
